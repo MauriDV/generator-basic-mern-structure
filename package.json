@@ -1,0 +1,15 @@
+{
+  "name": "generator-basic-mern-structure",
+  "version": "0.1.1",
+  "description": "",
+  "files": [
+    "app",
+    "router"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.1.0"
+  }
+}
