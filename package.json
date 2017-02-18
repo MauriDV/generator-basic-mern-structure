@@ -1,13 +1,25 @@
 {
   "name": "generator-basic-mern-structure",
-  "version": "0.1.1",
-  "description": "",
+  "version": "0.1.2",
+  "description": "basic structure for mern stack",
+  "repository":"git@github.com:MauriDV/generator-basic-mern-structure",
+  "author":{
+    "name":"Mauricio",
+    "email":"mdellevedove12@gmail.com",
+    "url":"https://github.com/MauriDV"
+  },
   "files": [
     "app",
     "router"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "mern",
+    "react",
+    "structure",
+    "mongo",
+    "nodejs",
+    "express"
   ],
   "dependencies": {
     "yeoman-generator": "^1.1.0"
