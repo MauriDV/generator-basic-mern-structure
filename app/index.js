@@ -5,9 +5,21 @@ module.exports = class extends Generator {
     super(args,opts);
     this.option('babel');
 
-    this.argument("appname",{type:String,required:true});
+    this.argument("appname",{type:String,required:false});
 
     this.log(this.options.appname);
+  }
+  prompting(){
+    if(this.options.appname == undefined){
+      return this.prompt([{
+        type:'input',
+        name:'name',
+        message:'Your proyect name: ',
+        default:this.appname
+      }]).then((res) =>{
+        this.options.appname = res.name;
+      });
+    }
   }
   writing(){
     this.fs.copyTpl(
